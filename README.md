@@ -35,15 +35,13 @@ exercises**
 
 9. [Proposed Test Applications](#proposed-test-applications)
 
-10. [Environment Setup]
+10. [Learning Days](#learning-days)
 
-11. [Learning Days](#learning-days)
-
-    * [Topic 0: Introduction to Object Oriented Programming Concepts (OOP)](#topic-0-Introduction-to-Object-Oriented-Programming-Concepts-3-days)
+    * [Topic 0: Introduction to Object Oriented Programming Concepts (OOP)](#topic-0-introduction-to-object-oriented-programming-concepts-1-day)
 
     * [Topic 1: Maven](#topic-1-maven-1-day)
 
-    * [Topic 2: TDD(#topic-2-tdd-3-days)
+    * [Topic 2: Test Driven Development](#topic-2-tdd-3-days)
 
     * [Topic 3: Services](#topic-3-services-1-day)
 
@@ -55,7 +53,7 @@ exercises**
   
     * [Topic 7: Spring Data & MongoDB](#topic-7-sprint-data--mongoDB-1-day)
 
-12. [Your First Project Starts Now!](#bookmark=id.605681dc8138)
+11. [Your First Project Starts Now!](#bookmark=id.605681dc8138)
 
 ###Objective
 
@@ -169,6 +167,7 @@ You will commit all your code on a daily basis, when you finish your practice.
 ### Introduction
 
 TBD
+[JVM](http://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=392:la-maquina-virtual-java-jvm-o-java-virtual-machine-compilador-e-interprete-bytecode-cu00611b&catid=68:curso-aprender-programacion-java-desde-cero&Itemid=188)
 
 ####Topic 0: Introduction to Object Oriented Programming Concepts (1 day)####
 
@@ -176,15 +175,15 @@ TBD
 
 1. Beginners: Java Concepts [basic tutorial](http://docs.oracle.com/javase/tutorial/java/concepts/) (in case you need it!)
 
-2. Beginners: Have fun with [Introduction](http://www.ntu.edu.sg/home/ehchua/programming/java/J1a_Introduction.html).
+2. Beginners: Have fun with [Introduction to Java Programming](http://www.ntu.edu.sg/home/ehchua/programming/java/J1a_Introduction.html). 
 
-3. Recommended: [jQuery Fundamentals](http://jqfundamentals.com/book/index.html) 
-
-4. Explore [Design Patterns](http://www.avajava.com/tutorials/categories/design-patterns)
+3. Explore [Design Patterns](http://www.avajava.com/tutorials/categories/design-patterns)
 
 #####Extra documentation:#####
 
-[TBD]
+* [Design Patterns Card](http://www.mcdonaldland.info/files/designpatterns/designpatternscard.pdf)
+
+* [Design Patterns CD](http://www.saeedsh.com/resources/Design%20Patterns.pdf)
 
 #####Practice:#####
 
@@ -192,7 +191,7 @@ TBD
 
 #####Key Points:#####
 
-1, 5, 7, 10, 13
+TBD
 
 #####Commit:#####
 
@@ -201,83 +200,171 @@ Commit your practice code.
 → [index](#index)
 
 
+
+####Topic 1: Maven (1 day)####
+
+#####Reading:#####
+
+1. [What is Maven?](http://maven.apache.org/what-is-maven.html)
+
+2. Have fun with [Maven in 5 minutes](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html). 
+
+3. Explore [Maven build life cycles phases and goals](http://tutorials.jenkov.com/maven/maven-tutorial.html#maven-build-life-cycles-phases-and-goals)
+
+#####Practice:#####
+
+TBD
+
+#####Key Points:#####
+
+TBD
+
+#####Commit:#####
+
+Commit your practice code.
+
+→ [index](#index)
+
+
+
+####Topic 2: Test Driven Development (1 day)####
+
+#####Reading:#####
+
+1. Watch the following videos:
+
+   - [Test-driven development tutorial](https://www.youtube.com/watch?v=QCif_-r8eK4)
+   - [Let's Play TDD #1](https://www.youtube.com/watch?v=f3G7gu1IHws)
+   - [Let's Play TDD #2](https://www.youtube.com/watch?v=1-sBRRWBxSg)
+
+2. [Test Driven Development](http://www.jamesshore.com/Agile-Book/test_driven_development.html)
+
+3. Have fun with [Test Driven Development in Java using Eclipse](https://www.youtube.com/watch?v=OluA0uJP9ts). 
+
+#####Practice:#####
+
+TBD
+
+#####Key Points:#####
+
+TBD
+
+#####Commit:#####
+
+Commit your practice code.
+
+→ [index](#index)
+
+
+
+####Topic 3: Services (1 day)####
+
+#####Reading:#####
+
+TBD
+
+#####Practice:#####
+
+TBD
+
+#####Key Points:#####
+
+TBD
+
+#####Commit:#####
+
+Commit your practice code.
+
+→ [index](#index)
+
+
+
+####Topic 4: SQL - MySql (1 day)####
+
+#####Reading:#####
+
+TBD
+
+#####Practice:#####
+
+TBD
+
+#####Key Points:#####
+
+TBD
+
+#####Commit:#####
+
+Commit your practice code.
+
+→ [index](#index)
+
+
+
+####Topic 5: Sprint Core (1 day)####
+
+#####Reading:#####
+
+TBD
+
+#####Practice:#####
+
+TBD
+
+#####Key Points:#####
+
+TBD
+
+#####Commit:#####
+
+Commit your practice code.
+
+→ [index](#index)
+
+
+
+####Topic 6: Hibernate (1 day)####
+
+#####Reading:#####
+
+TBD
+
+#####Practice:#####
+
+TBD
+
+#####Key Points:#####
+
+TBD
+
+#####Commit:#####
+
+Commit your practice code.
+
+→ [index](#index)
+
+
+
+####Topic 7: Spring Data & MongoDB (1 day)####
+
+#####Reading:#####
+
+TBD
+
+#####Practice:#####
+
+TBD
+
+#####Key Points:#####
+
+TBD
+
+#####Commit:#####
+
+Commit your practice code.
+
+→ [index](#index)
+
+
+
 Thanks for reading!
-
-
-
-
-
-
-java-bootcamp
-=============
-
-Week 1
-======
-
-OOP
----
-Reading: 
-  - http://docs.oracle.com/javase/tutorial/java/concepts/
-Exercises: 
-  - http://www.ntu.edu.sg/home/ehchua/programming/java/J3f_OOPExercises.html
-Rookies: 
-  - http://www.ntu.edu.sg/home/ehchua/programming/java/J1a_Introduction.html
-Extra: 
-  - http://www.avajava.com/tutorials/categories/design-patterns
-
-Maven
------
-Reading: 
-   - http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
-   - http://tutorials.jenkov.com/maven/maven-tutorial.html#maven-build-life-cycles-phases-and-goals
-
-Git
----
-Reading: 
-  - http://maven.apache.org/what-is-maven.html
-Excercise: 
-  - https://try.github.io/levels/1/challenges/1
-
-TDD
----
-Reading:
-  - https://www.youtube.com/watch?v=QCif_-r8eK4
-  - https://www.youtube.com/watch?v=f3G7gu1IHws
-  - https://www.youtube.com/watch?v=1-sBRRWBxSg
-  - http://www.jamesshore.com/Agile-Book/test_driven_development.html
-Rookies:
-  - https://www.youtube.com/watch?v=OluA0uJP9ts
-Excercise:
-  - 
-
-
-Week 2
-======
-
-Services
---------
-  - Reading:
-  - Excercise:
-
-SQL - MySql
------------
-  - Reading:
-  - Excercise:
-
-Spring core
------------
-  - Reading:
-  - Excercise:
-
-Hibernate
----------
-  - Reading:
-  - Excercise:
-
-Spring Data y MongoDb
----------------------
-  - Reading:
-  - Excercise:
-
-Week 3
-======
