@@ -39,19 +39,21 @@ exercises**
 
     * [Topic 0: Introduction to Object Oriented Programming Concepts (OOP)](#topic-0-introduction-to-object-oriented-programming-concepts-1-day)
 
-    * [Topic 1: Maven](#topic-1-maven-1-day)
+    * [Topic 1: Design Patterns](#topic-1-maven-2-days)
 
-    * [Topic 2: Test Driven Development](#topic-2-tdd-3-days)
+    * [Topic 2: Maven](#topic-2-maven-1-day)
 
-    * [Topic 3: Services](#topic-3-services-1-day)
+    * [Topic 3: Test Driven Development](#topic-3-tdd-3-days)
 
-    * [Topic 4: SQL - MySql](#topic-4-sql-mySql-1-day)
+    * [Topic 4: Services](#topic-4-services-1-day)
 
-    * [Topic 5: Sprint Core](#topic-5-sprint-core-3-days)
+    * [Topic 5: SQL - MySql](#topic-5-sql-mySql-1-day)
 
-    * [Topic 6: Hibernate](#topic-6-hibernate-1-day)
+    * [Topic 6: Sprint Core](#topic-6-sprint-core-3-days)
+
+    * [Topic 7: Hibernate](#topic-7-hibernate-1-day)
   
-    * [Topic 7: Spring Data & MongoDB](#topic-7-sprint-data--mongoDB-1-day)
+    * [Topic 8: Spring Data & MongoDB](#topic-8-sprint-data--mongoDB-1-day)
 
 11. [Your First Project Starts Now!](#bookmark=id.605681dc8138)
 
@@ -192,6 +194,72 @@ TBD
 #####Key Points:#####
 
 TBD
+
+#####Commit:#####
+
+Commit your practice code.
+
+→ [index](#index)
+
+
+####Topic 1: Design Patterns (2 days)####
+
+#####Reading:#####
+
+1. [Design Patterns CD](http://www.saeedsh.com/resources/Design%20Patterns.pdf)
+
+2. Explore [Design Patterns](http://www.avajava.com/tutorials/categories/design-patterns)
+
+#####Extra documentation:#####
+
+* [Design Patterns Card](http://www.mcdonaldland.info/files/designpatterns/designpatternscard.pdf)
+
+* [Refactoring to Patterns Catalog](http://www.industriallogic.com/xp/refactoring/catalog.html)
+
+#####Practice:#####
+
+1. Create a ShoppingCart where a user can buy different items and then decide how to pay them:
+ 
+     * by Credit Card: where a Name and a Credit Number is required.
+
+     * by Paypal: where an email and a password is needed.
+
+     * Cash: no information is required.
+
+2. Add the following discount depending on the payment type
+
+     * 10% by Credit Card.
+
+     * The cheapest item is for free when the user pay by Paypal.
+
+     * 90% of the most expensive item is free if the user pays by Cash.
+
+3. Create a counter to provide unique sequential numbers and use it to set an identification to each payment transaction.
+
+4. Add functionality to display information about the list of items. The item should be display as:
+
+     * Item Name ....... $ price
+
+5. Add an offer that include other individual items or other offers. And take in account that when an offer is displayed, it should say:
+
+
+     * Offer Name ....... $ price
+
+       - Item Name ...... $ price
+
+6. Add a mailist List where the market manager is notify when:
+    
+     * A new item/offer is added
+
+     * A price is changed
+
+     * A new transaction was made
+
+7. Audio Player: Modelate an application for listening music. You can play, stop and pause tracks.
+
+#####Key Points:#####
+
+1, 2, 3, 4, 5, 6, 7
 
 #####Commit:#####
 
