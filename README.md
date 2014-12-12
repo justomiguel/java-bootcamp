@@ -269,7 +269,7 @@ Commit your practice code.
 
 
 
-####Topic 1: Maven (1 day)####
+####Topic 2: Maven (1 day)####
 
 #####Reading:#####
 
@@ -295,7 +295,7 @@ Commit your practice code.
 
 
 
-####Topic 2: Test Driven Development (1 day)####
+####Topic 3: Test Driven Development (1 day)####
 
 #####Reading:#####
 
@@ -325,11 +325,12 @@ Commit your practice code.
 
 
 
-####Topic 3: Services (1 day)####
+####Topic 4: Services (1 day)####
 
 #####Reading:#####
 
-TBD
+  [How to create services in Java](http://www.makinggoodsoftware.com/2009/11/17/how-to-create-services-in-java/)
+  [How to design a good API and why it matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
 
 #####Practice:#####
 
@@ -347,11 +348,12 @@ Commit your practice code.
 
 
 
-####Topic 4: SQL - MySql (1 day)####
+####Topic 5: SQL - MySql (1 day)####
 
 #####Reading:#####
+[MySql basis](http://www.vogella.com/tutorials/MySQL/article.html)
+[Jdbc basis](http://www.vogella.com/tutorials/MySQLJava/article.html#jdbc)
 
-TBD
 
 #####Practice:#####
 
@@ -373,7 +375,9 @@ Commit your practice code.
 
 #####Reading:#####
 
-TBD
+[Overview](http://docs.spring.io/spring/docs/4.1.4.BUILD-SNAPSHOT/spring-framework-reference/htmlsingle/#overview)
+[Quick guide](http://www.tutorialspoint.com/spring/spring_quick_guide.htm)
+[Spring boot](http://docs.spring.io/spring-boot/docs/1.2.1.BUILD-SNAPSHOT/reference/htmlsingle/) up to point III (included)
 
 #####Practice:#####
 
