@@ -279,6 +279,10 @@ Commit your practice code.
 
 3. Explore [Maven build life cycles phases and goals](http://tutorials.jenkov.com/maven/maven-tutorial.html#maven-build-life-cycles-phases-and-goals)
 
+4. [Maven life cycle](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html)
+
+5. Maven: [best practices](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-best-practice.html)
+
 #####Practice:#####
 
 TBD
@@ -395,11 +399,11 @@ Commit your practice code.
 
 
 
-####Topic 6: Hibernate (1 day)####
+####Topic 6: ORM (1 day)####
 
 #####Reading:#####
-
-TBD
+1. [Spring ORM integration](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/orm.html)
+2. Spring Boot and [JPA integration](http://spring.io/guides/gs/accessing-data-jpa/)
 
 #####Practice:#####
 
