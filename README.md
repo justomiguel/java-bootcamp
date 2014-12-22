@@ -386,11 +386,11 @@ Commit your practice code.
 6. Percentage of students that passed/failed a given course.
 7. For a given teacher, list the timeline for each course that he is assigned to (ordered by date), and the course name. The format should be:
 
-      Teacher: <last-name>, <first-name>
-      Schedule:
-        Monday 09:00 - 11:00: <course-name>
-        Monday 15:00 - 17:30: <course-name>
-        Friday 08:45 - 10:40: <course-name>
+        Teacher: <last-name>, <first-name>
+        Schedule:
+          Monday 09:00 - 11:00: <course-name>
+          Monday 15:00 - 17:30: <course-name>
+          Friday 08:45 - 10:40: <course-name>
 
 8. Identify and Optimize all queries
 
