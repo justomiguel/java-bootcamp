@@ -236,18 +236,18 @@ Commit your practice code.
 
 3. Create a counter to provide unique sequential numbers and use it to set an identification to each payment transaction.
 
-4. Add functionality to display information about the list of items. The item should be display as:
+4. Add functionality to display information about the list of items. The item should be displayed as:
 
      * Item Name ....... $ price
 
-5. Add an offer that include other individual items or other offers. And take in account that when an offer is displayed, it should say:
+5. Add an offer that includes other individual items or other offers. Take into account that when an offer is displayed, it should say:
 
 
      * Offer Name ....... $ price
 
        - Item Name ...... $ price
 
-6. Add a mailist List where the market manager is notify when:
+6. Add a mailist List where the market manager is notified when:
     
      * A new item/offer is added
 
@@ -329,7 +329,7 @@ Commit your practice code.
 
 
 
-####Topic 4: Services (1 day)####
+####Topic 4: Services (4 days)####
 
 #####Reading:#####
 
@@ -375,7 +375,7 @@ Commit your practice code.
 
 
 
-####Topic 5: Sprint Core (1 day)####
+####Topic 6: Sprint Core (1 day)####
 
 #####Reading:#####
 
@@ -399,7 +399,7 @@ Commit your practice code.
 
 
 
-####Topic 6: ORM (1 day)####
+####Topic 7: ORM (1 day)####
 
 #####Reading:#####
 1. [Spring ORM integration](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/orm.html)
@@ -421,7 +421,7 @@ Commit your practice code.
 
 
 
-####Topic 7: Spring Data & MongoDB (1 day)####
+####Topic 8: Spring Data & MongoDB (1 day)####
 
 #####Reading:#####
 
