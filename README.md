@@ -374,7 +374,7 @@ Commit your practice code.
    - For each course, each student has 3 partial notes and a final note.
 
 2. Create all relationship that you think they are required
-3. Insert information for 3 teachers, 5 courses and 20 students for course
+3. Insert information for 3 teachers, 5 courses and 20 students per course
 4. List students and teachers for a given course. The output format should be:
 
         Course: <course-name>
@@ -393,6 +393,12 @@ Commit your practice code.
           Friday 08:45 - 10:40: <course-name>
 
 8. Identify and Optimize all queries
+9. Create a table for students that have more than 1 partial note with a value less than 7. The table should contain the following information:
+    * Student name
+    * Course name
+    * Average Note
+10. Add a new column to the previous table (assigned teacher) and update it with the proper information.
+11. Delete the oldest teacher (courses assigned to her should be empty).
 
 #####Key Points:#####
 
