@@ -317,11 +317,9 @@ Commit your practice code.
 
 TBD
 
-8. Identify and Optimize all queries
-
 #####Key Points:#####
 
-1,2,3,4,5,8
+TBD
 
 #####Commit:#####
 
@@ -384,8 +382,7 @@ Commit your practice code.
         Students:
           <last-name>, <first-name> (ordered by alphabetically by last name)
 
-
-5.List final course notes for a given student (the input could be last name or the registration number). They should be ordered by highest notes and course name)
+5. List final course notes for a given student (the input could be last name or the registration number). They should be ordered by highest notes and course name)
 6. Percentage of students that passed/failed a given course.
 7. For a given teacher, list the timeline for each course that he is assigned to (ordered by date), and the course name. The format should be:
 
@@ -395,9 +392,11 @@ Commit your practice code.
         Monday 15:00 - 17:30: <course-name>
         Friday 08:45 - 10:40: <course-name>
 
+8. Identify and Optimize all queries
+
 #####Key Points:#####
 
-TBD
+1,2,3,4,5,8
 
 #####Commit:#####
 
