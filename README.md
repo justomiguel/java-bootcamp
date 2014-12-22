@@ -45,7 +45,7 @@ exercises**
 
     * [Topic 3: Test Driven Development](#topic-3-tdd-3-days)
 
-    * [Topic 4: Services](#topic-4-services-1-day)
+    * [Topic 4: Services](#Topic 4: Services (4 days))
 
     * [Topic 5: SQL - MySql](#topic-5-sql-mySql-1-day)
 
