@@ -335,21 +335,27 @@ Commit your practice code.
 
    - [How to create services in Java](http://www.makinggoodsoftware.com/2009/11/17/how-to-create-services-in-java/)
    - [How to design a good API and why it matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
+   - [Spring boot - rest services guide](http://spring.io/guides/tutorials/bookmarks/)
 
 #####Practice:#####
 
-TBD
+1. Create a shopping cart API spec
+2. Implement the previous shopping cart using spring 4 & TDD.
+3. Document endpoints
+4. Design a UserService for CRUD operations.
+5. Implement and document previous UserService.
+6. Add a uploadPhoto to the UserService
+7. Add friends and likes (photos) to previous UserService.
 
 #####Key Points:#####
 
-TBD
+2,4,7
 
 #####Commit:#####
 
 Commit your practice code.
 
 → [index](#index)
-
 
 
 ####Topic 5: SQL - MySql (1 day)####
