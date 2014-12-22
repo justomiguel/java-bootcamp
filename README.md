@@ -315,11 +315,42 @@ Commit your practice code.
 
 #####Practice:#####
 
-TBD
+1. Create a database named 'high-school' and modelate:
+ 
+   - Student: first name, last name, registration number, date of birth)
+   - Teacher: first name, last name, date of birth)
+   - Course: name, assigned teacher, hours by week, schedule time (they can be dictated several times during the week)
+
+   Notes:
+   - An student can assist several courses during the same year.
+   - A teacher can be assigned to several courses.
+   - For each course, each student has 3 partial notes and a final note.
+
+2. Create all relationship that you think they are required
+3. Insert information for 3 teachers, 5 courses and 20 students for course
+4. List students and teachers for a given course. The output format should be:
+
+        Course: <course-name>
+        Teacher: <last-name>, <first-name>
+        Students:
+          <last-name>, <first-name> (ordered by alphabetically by last name)
+
+
+5.List final course notes for a given student (the input could be last name or the registration number). They should be ordered by highest notes and course name)
+6. Percentage of students that passed/failed a given course.
+7. For a given teacher, list the timeline for each course that he is assigned to (ordered by date), and the course name. The format should be:
+
+      Teacher: <last-name>, <first-name>
+      Schedule:
+        Monday 09:00 - 11:00: <course-name>
+        Monday 15:00 - 17:30: <course-name>
+        Friday 08:45 - 10:40: <course-name>
+
+8. Identify and Optimize all queries
 
 #####Key Points:#####
 
-TBD
+1,2,3,4,5,8
 
 #####Commit:#####
 
@@ -357,6 +388,7 @@ Commit your practice code.
 #####Reading:#####
    - [MySql basis](http://www.vogella.com/tutorials/MySQL/article.html)
    - [Jdbc basis](http://www.vogella.com/tutorials/MySQLJava/article.html#jdbc)
+   - [Optimizaciones en MySql](http://www.arsys.info/programacion/bases-de-datos/como-optimizar-bases-de-datos-mysql/)
 
 
 #####Practice:#####
