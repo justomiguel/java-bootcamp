@@ -347,6 +347,8 @@ Commit your practice code.
 6. Add a uploadPhoto to the UserService
 7. Add friends and likes (photos) to previous UserService.
 
+Note: you can choose any endpoint documentation standard. As an example you can use the [twitter format](https://dev.twitter.com/rest/reference/get/users/lookup)
+
 #####Key Points:#####
 
 2,4,7
