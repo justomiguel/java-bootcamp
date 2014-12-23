@@ -362,6 +362,8 @@ Commit your practice code.
 
 Note: you can choose any endpoint documentation standard. As an example you can use the [twitter format](https://dev.twitter.com/rest/reference/get/users/lookup)
 
+Note 2: Do not implement JPA or ORM. Services should return in memory data only.
+
 #####Key Points:#####
 
 2,4,7
@@ -465,7 +467,13 @@ Commit your practice code.
 
 #####Practice:#####
 
-TBD
+1. Configure Spring ORM to connect to the DB created on Topic 5.
+2. Implement JPA objects for the entities you created on Topic 5.
+3. Create one or more DAO or repository with methods to:
+    - Store a student, teacher and course.
+    - Fetch all students, fetch all teachers, fetch all courses.
+4. Create a method to fetch all courses of a given student.
+5. Create a method to fetch all students of a given course.
 
 #####Key Points:#####
 
