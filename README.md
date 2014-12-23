@@ -328,11 +328,38 @@ Commit your practice code.
 
 #####Practice:#####
 
-TBD
+1. Convert an amount on a check to appropiate text. For example:
+  * 2523.04 --> Two thousand five hundred twenty-three and 04/100 dollars
+
+2. Develop a word-wrapping algorithm, which is given a string and a row-length, returns a list of word-wrapped rows. For example:
+  * If the row-length is 60 and the input string is 30, the result is just the input string
+  * If the row-length is 7 and the input string is "Hello Word!", the result should be: "Hello", "Word!"
+  * If the row-length is 3 and the input string is "a b c d e f", the result should be "a b", "c d", "e f"
+  * If the row-length is 5 and the input string is "Excelent", the result should be "Excel", "ent"
+
+3. Use TDD to grow the 'Recent file list' behaviour. Some examples of this behaviour is:
+  * When the program is run for the first time, the list is empty.
+  * When a file is opened, it is added to the recent file list.
+  * If an opened file already exists in the recent file list, it is bumped to the top, not duplicated in the list.
+  *If the recent file list gets full (typical number of items is 15), the oldest item is removed when a new item is added.
+
+4. Create a Roman Number conversion (both ways, either int to Roman or Roman to int). All rules can be found on wikipedia: [Roman numerals](http://en.wikipedia.org/wiki/Roman_numerals).
+
+5. American Soundex: This algorithm encodes words using a phonetic algorithm that promotes convergence of similar-sounding words. For more information about algorithm please read [American Soundex](http://en.wikipedia.org/wiki/Soundex#American_Soundex). Create a function to return the proper soundex code.
+
+6. Using TDD techniques such as mocking, faking and stubs, try to develop your own blog software featuring:
+  * Post new entry
+  * Delete existing entry
+  * Update existing entry
+  * Show 10 most recent entries
+  * Tag an entry
+  * Show all tags
+  * Show blog entry with a certain tag
+  * And so on...
 
 #####Key Points:#####
 
-TBD
+1,2,3,4
 
 #####Commit:#####
 
