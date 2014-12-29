@@ -375,7 +375,6 @@ Commit your practice code.
 
    - [How to create services in Java](http://www.makinggoodsoftware.com/2009/11/17/how-to-create-services-in-java/)
    - [How to design a good API and why it matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
-   - [Spring boot - rest services guide](http://spring.io/guides/tutorials/bookmarks/)
 
 #####Practice:#####
 
@@ -462,13 +461,14 @@ Commit your practice code.
 
 
 
-####Topic 6: Sprint Core (1 day)####
+####Topic 6: Sprint Core (3 day)####
 
 #####Reading:#####
 
    - [Overview](http://docs.spring.io/spring/docs/4.1.4.BUILD-SNAPSHOT/spring-framework-reference/htmlsingle/#overview)
    - [Quick guide](http://www.tutorialspoint.com/spring/spring_quick_guide.htm)
    - [Spring boot](http://docs.spring.io/spring-boot/docs/1.2.1.BUILD-SNAPSHOT/reference/htmlsingle/) up to point III (included)
+   - [Spring boot - rest services guide](http://spring.io/guides/tutorials/bookmarks/)
 
 #####Practice:#####
 
