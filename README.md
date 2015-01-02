@@ -142,7 +142,7 @@ Here you will reach just your boot camp fellows for asking question sharing know
 
 10. All code and documentation must be in English.
 
-11. Code must adhere to Globant’s UI [Java coding guidelines](https://github.com/globant-ui/html-style-guide). (update url)
+11. Code must adhere to Globant’s Java [coding guidelines](https://github.com/juanpablopizarro/java-bootcamp/blob/master/formatter.xml).
 
 → [index](#index)
 
