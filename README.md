@@ -189,11 +189,13 @@ TBD
 
 #####Practice:#####
 
-1. [OPP Exercises](http://www.ntu.edu.sg/home/ehchua/programming/java/J3f_OOPExercises.html)
+1. [OOP Exercises](http://www.ntu.edu.sg/home/ehchua/programming/java/J3f_OOPExercises.html)
+2. Design a building like a house and provide a builder to build it.
+3. Design a hospital and provide classes to build it (builder, factories, etc).
 
 #####Key Points:#####
 
-TBD
+2,3
 
 #####Commit:#####
 
