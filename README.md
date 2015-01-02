@@ -83,7 +83,7 @@ You can contact other bootcamp participants or any available tutor if you need t
 
 ###Performance Measurement
 
-1. Code review after each practice and sprint
+1. Code review after each practice.
 
 2. Checkpoint completion after Learning stage with your assigned tutor
 
@@ -120,35 +120,30 @@ The boot camp is organized in the following way:
 
 2. The next week will be used to develop an application following a life process.
 
-3. The project manager will coordinate learning days encouraging team communication in daily meetings.
+3. One boot camp chat will be created for feedback and technical assistance:
 
-4. The project manager will gather information regarding individual progress so we can look for alternative assistance where needed.
-
-5. The project manager will lead the boot camp sprints as if it were a real project using SCRUM agile methodology.
-
-6. Two boot camp chats will be created for feedback and technical assistance:
-
-    1. Bootcamp HTML - ALL
+    Bootcamp HTML - ALL
 Every person participating in the bootcamp is present here (students, tutors and PMs). Here is the place to ask for technical assistance!
 
-    2. Bootcamp HTML - Assistants
-Here you will reach just your boot camp fellows for asking question sharing knowledge.
+4. [Team play](http://www.dummies.com/how-to/content/ten-qualities-of-an-effective-team-player.html) is encouraged but the work will be evaluated per person.
 
-7. Team play is encouraged but the work will be evaluated per person.
+5. The instructions will be vague as they generally are in real life projects. You must look for support and guidance from your PM, teammates and tutors.
 
-8. Sprint duration will be 1 week.
+6. All code and documentation must be in English.
 
-9. The instructions will be vague as they generally are in real life projects. You must look for support and guidance from your PM, teammates and tutors.
-
-10. All code and documentation must be in English.
-
-11. Code must adhere to Globant’s Java [coding guidelines](https://github.com/juanpablopizarro/java-bootcamp/blob/master/formatter.xml).
+7. Code must adhere to this [eclipse code formatter](https://github.com/juanpablopizarro/java-bootcamp/blob/master/formatter.xml).
 
 → [index](#index)
 
 ###Proposed Test Applications
 
-The test application will consist in TBD.
+The test application will consist in a functional shopping cart (just REST api). The minimum features to be completed are:
+
+  - User registration and login.
+  - Buy products.
+  - Save Cart.
+  - Find products by category and name.
+
 
 ###Learning Days###
 
