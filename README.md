@@ -200,7 +200,7 @@ Commit your practice code.
 → [index](#index)
 
 
-####Topic 1: Design Patterns (2 days)####
+####Topic 1: Design Patterns (3 days)####
 
 #####Reading:#####
 
@@ -286,21 +286,20 @@ Commit your practice code.
 (It is assumed that Maven is already installed and working. I think it is not needed as an excercise to install maven locally).
 
 1. Create a simple Maven project:
-   - Here, the idea is to use the Maven Archetype plugin from the command line. Run the archetype:generate goal, selecting default archetype suggested by pressing "Enter". (Falta indicar el creado de una clase sencilla del estilo "Hello World" y su correspondiente clases de test para asi pasar al pto 2.)
+   - Here, the idea is to use the Maven Archetype plugin from the command line. Run the archetype:generate goal, selecting default archetype suggested by pressing "Enter". Create a simple a simple application that takes a name from console and print a greeting using the given name.
 2. Building a Simple Project:
    - Create, compile, test, and install the Maven project created on the previous point. To prove that this program works, run it from the command line.
-3. Playing with POM (different alternatives to achieve goals).
-4. Customizing a Maven Project
+3. Customizing a Maven Project
    Expand the project created on point 2. The idea is to start playing with adding some dependencies, adding some source code, and customizing the project to suit specific needs. 
-5. A Simple Web Application  (To be discussed. Not really sure if this will take place).
-6. A Multi-module Project.
+4. A Simple Web Application  (To be discussed. Not really sure if this will take place).
+5. A Multi-module Project.
    Create a multi-module project that combines work done on previous points (2 and 5). The idea when completing this point is to be able to use Maven to develop complex, multi-module projects.
-7. Optimizing and Refactoring POMs.
+6. Optimizing and Refactoring POMs.
    Need entirely sure what to include here. Probably start working with specific profiles.
 
 #####Key Points:#####
 
-TBD
+1,4,5
 
 #####Commit:#####
 
@@ -310,7 +309,7 @@ Commit your practice code.
 
 
 
-####Topic 3: Test Driven Development (1 day)####
+####Topic 3: Test Driven Development (2 day)####
 
 #####Reading:#####
 
@@ -367,7 +366,7 @@ Commit your practice code.
 
 
 
-####Topic 4: Services (2 days)####
+####Topic 4: Services (3 days)####
 
 #####Reading:#####
 
@@ -504,7 +503,7 @@ Commit your practice code.
 
 #####Key Points:#####
 
-TBD
+1,2,3,4,5
 
 #####Commit:#####
 
@@ -514,7 +513,7 @@ Commit your practice code.
 
 
 
-####Topic 8: Spring Data & MongoDB (1 day)####
+####Topic 8: Spring Data & MongoDB (2 day)####
 
 #####Reading:#####
 
