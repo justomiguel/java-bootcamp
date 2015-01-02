@@ -45,7 +45,7 @@ exercises**
 
     * [Topic 3: Test Driven Development](#topic-3-tdd-3-days)
 
-    * [Topic 4: Services](#topic-4-services-4-days)
+    * [Topic 4: Services](#topic-4-services-2-days)
 
     * [Topic 5: SQL - MySql](#topic-5-sql-mySql-1-day)
 
@@ -369,7 +369,7 @@ Commit your practice code.
 
 
 
-####Topic 4: Services (4 days)####
+####Topic 4: Services (2 days)####
 
 #####Reading:#####
 
@@ -465,20 +465,20 @@ Commit your practice code.
 
 #####Reading:#####
 
-   - [Overview](http://docs.spring.io/spring/docs/4.1.4.BUILD-SNAPSHOT/spring-framework-reference/htmlsingle/#overview)
    - [Quick guide](http://www.tutorialspoint.com/spring/spring_quick_guide.htm)
    - [Spring boot](http://docs.spring.io/spring-boot/docs/1.2.1.BUILD-SNAPSHOT/reference/htmlsingle/) up to point III (included)
    - [REST I](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
    - [REST II](http://martinfowler.com/articles/richardsonMaturityModel.html)
    - [Spring boot - rest services guide](http://spring.io/guides/tutorials/bookmarks/)
-
+  
 #####Practice:#####
 
-TBD
+1. Expose the shopping cart created in the topic 4.
+2. Create a REST API to create, update and remove meetings. Note that a meeting has attendees, room and a time slot. Attendees and rooms exists in the system and must be retrieved by an endpoint to create the meeting. You must provide the following features: create meetings, query existing ones, cancel and update meetings.
 
 #####Key Points:#####
 
-TBD
+2
 
 #####Commit:#####
 
