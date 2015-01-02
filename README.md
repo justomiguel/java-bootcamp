@@ -49,7 +49,7 @@ exercises**
 
     * [Topic 5: SQL - MySql](#topic-5-sql-mySql-1-day)
 
-    * [Topic 6: Sprint Core](#topic-6-sprint-core-3-days)
+    * [Topic 6: Sprint Core & REST](#topic-6-sprint-core-3-days)
 
     * [Topic 7: Hibernate](#topic-7-hibernate-1-day)
   
@@ -461,13 +461,15 @@ Commit your practice code.
 
 
 
-####Topic 6: Sprint Core (3 day)####
+####Topic 6: Sprint Core & REST (3 day)####
 
 #####Reading:#####
 
    - [Overview](http://docs.spring.io/spring/docs/4.1.4.BUILD-SNAPSHOT/spring-framework-reference/htmlsingle/#overview)
    - [Quick guide](http://www.tutorialspoint.com/spring/spring_quick_guide.htm)
    - [Spring boot](http://docs.spring.io/spring-boot/docs/1.2.1.BUILD-SNAPSHOT/reference/htmlsingle/) up to point III (included)
+   - [REST I](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
+   - [REST II](http://martinfowler.com/articles/richardsonMaturityModel.html)
    - [Spring boot - rest services guide](http://spring.io/guides/tutorials/bookmarks/)
 
 #####Practice:#####
