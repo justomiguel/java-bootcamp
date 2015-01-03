@@ -516,16 +516,24 @@ Commit your practice code.
 ####Topic 8: Spring Data & MongoDB (2 day)####
 
 #####Reading:#####
-
-TBD
+  - [SQL to MongoDB Mapping Chart](http://docs.mongodb.org/manual/reference/sql-comparison)
+  - [Installing MongoDB](http://docs.mongodb.org/manual/installation)
+  - [Getting Started With MongoDB](http://docs.mongodb.org/manual/tutorial/getting-started/)
+  - [Java And MongoDB](http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver)
+  - [Spring and Mongo](http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/)
+  - [Spring boot and MongoDB](http://docs.mongodb.org/manual/tutorial/getting-started/)
 
 #####Practice:#####
 
-TBD
+1. Using the same SQL-MySql data model, map it to the corresponding database, collections and documents.
+2. Fetch all students whose notes in a specific course were greater than 4.
+3. Fetch all courses ordered by name for a given teacher.
+4. Add a new field to “courses” collection to identify which courses are finished.
+5. Create a new project using Spring Data for MongoDB framework and translate items 2, 3 and 4.
 
 #####Key Points:#####
 
-TBD
+1,2,3,5
 
 #####Commit:#####
 
