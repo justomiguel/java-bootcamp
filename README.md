@@ -39,13 +39,13 @@ exercises**
 
     * [Topic 0: Introduction to Object Oriented Programming Concepts (OOP)](#topic-0-introduction-to-object-oriented-programming-concepts-1-day)
 
-    * [Topic 1: Design Patterns](#topic-1-maven-2-days)
+    * [Topic 1: Design Patterns](#topic-1-design-patterns-3-days)
 
     * [Topic 2: Maven](#topic-2-maven-1-day)
 
-    * [Topic 3: Test Driven Development](#topic-3-tdd-3-days)
+    * [Topic 3: Test Driven Development](#topic-3-test-driven-development-2-day)
 
-    * [Topic 4: Services](#topic-4-services-2-days)
+    * [Topic 4: Services](#topic-4-services-3-days)
 
     * [Topic 5: SQL - MySql](#topic-5-sql-mySql-1-day)
 
