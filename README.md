@@ -546,10 +546,10 @@ Commit your practice code.
 ####Final Project
 Create a functional shopping cart (just REST api). The minimum features to be completed are:
 
-User registration and login.
-Buy products.
-Save Cart.
-Find products by category and name.
+  - User registration and login.
+  - Buy products.
+  - Save Cart.
+  - Find products by category and name.
 
 
 
