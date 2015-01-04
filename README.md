@@ -53,7 +53,7 @@ exercises**
   
     * [Topic 8: Spring Data & MongoDB](#topic-8-spring-data--mongodb-2-day)
 
-10. [Your First Project Starts Now!](#final-project)
+10. [Your First Project Starts Now!](#your-first-project-starts-now)
 
 ###Objective
 
@@ -542,6 +542,8 @@ Commit your practice code.
 
 
 ###Your First Project Starts Now!
+
+####Final Project
 Create a functional shopping cart (just REST api). The minimum features to be completed are:
 
 User registration and login.
