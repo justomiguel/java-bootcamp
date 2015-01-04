@@ -541,7 +541,7 @@ Commit your practice code.
 → [index](#index)
 
 
-###Final Project
+###Your First Project Starts Now!
 Create a functional shopping cart (just REST api). The minimum features to be completed are:
 
 User registration and login.
