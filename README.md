@@ -33,9 +33,7 @@ exercises**
 
 8. [General Guidelines](#general-guidelines)
 
-9. [Proposed Test Applications](#proposed-test-applications)
-
-10. [Learning Days](#learning-days)
+9. [Learning Days](#learning-days)
 
     * [Topic 0: Introduction to Object Oriented Programming Concepts (OOP)](#topic-0-introduction-to-object-oriented-programming-concepts-1-day)
 
@@ -55,7 +53,7 @@ exercises**
   
     * [Topic 8: Spring Data & MongoDB](#topic-8-spring-data--mongodb-2-day)
 
-11. [Your First Project Starts Now!](#bookmark=id.605681dc8138)
+10. [Your First Project Starts Now!](#)
 
 ###Objective
 
@@ -541,6 +539,15 @@ Commit your practice code.
 Commit your practice code.
 
 → [index](#index)
+
+
+###Final Project
+Create a functional shopping cart (just REST api). The minimum features to be completed are:
+
+User registration and login.
+Buy products.
+Save Cart.
+Find products by category and name.
 
 
 
