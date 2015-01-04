@@ -47,13 +47,13 @@ exercises**
 
     * [Topic 4: Services](#topic-4-services-3-days)
 
-    * [Topic 5: SQL - MySql](#topic-5-sql-mySql-1-day)
+    * [Topic 5: SQL - MySql](#topic-5-sql---mysql-1-day)
 
-    * [Topic 6: Sprint Core & REST](#topic-6-sprint-core-3-days)
+    * [Topic 6: Sprint Core & REST](#topic-6-sprint-core--rest-3-day)
 
-    * [Topic 7: Hibernate](#topic-7-hibernate-1-day)
+    * [Topic 7: Hibernate](#topic-7-orm-1-day)
   
-    * [Topic 8: Spring Data & MongoDB](#topic-8-sprint-data--mongoDB-1-day)
+    * [Topic 8: Spring Data & MongoDB](#topic-8-spring-data--mongodb-2-day)
 
 11. [Your First Project Starts Now!](#bookmark=id.605681dc8138)
 
@@ -203,7 +203,6 @@ Commit your practice code.
 ####Topic 1: Design Patterns (3 days)####
 
 #####Reading:#####
-
 1. [Design Patterns CD](http://www.saeedsh.com/resources/Design%20Patterns.pdf)
 
 2. Explore [Design Patterns](http://www.avajava.com/tutorials/categories/design-patterns)
@@ -266,11 +265,9 @@ Commit your practice code.
 → [index](#index)
 
 
-
 ####Topic 2: Maven (1 day)####
 
 #####Reading:#####
-
 1. [What is Maven?](http://maven.apache.org/what-is-maven.html)
 
 2. Have fun with [Maven in 5 minutes](http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html). 
@@ -308,11 +305,9 @@ Commit your practice code.
 → [index](#index)
 
 
-
 ####Topic 3: Test Driven Development (2 day)####
 
 #####Reading:#####
-
 1. Watch the following videos:
 
    - [Test-driven development tutorial](https://www.youtube.com/watch?v=QCif_-r8eK4)
@@ -365,13 +360,12 @@ Commit your practice code.
 → [index](#index)
 
 
-
 ####Topic 4: Services (3 days)####
 
 #####Reading:#####
+1. [How to create services in Java](http://www.makinggoodsoftware.com/2009/11/17/how-to-create-services-in-java/)
 
-   - [How to create services in Java](http://www.makinggoodsoftware.com/2009/11/17/how-to-create-services-in-java/)
-   - [How to design a good API and why it matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
+2. [How to design a good API and why it matters](https://www.youtube.com/watch?v=aAb7hSCtvGw)
 
 #####Practice:#####
 
@@ -401,9 +395,11 @@ Commit your practice code.
 ####Topic 5: SQL - MySql (1 day)####
 
 #####Reading:#####
-   - [MySql basis](http://www.vogella.com/tutorials/MySQL/article.html)
-   - [Jdbc basis](http://www.vogella.com/tutorials/MySQLJava/article.html#jdbc)
-   - [Optimizaciones en MySql](http://www.arsys.info/programacion/bases-de-datos/como-optimizar-bases-de-datos-mysql/)
+1. [MySql basis](http://www.vogella.com/tutorials/MySQL/article.html)
+
+2. [Jdbc basis](http://www.vogella.com/tutorials/MySQLJava/article.html#jdbc)
+
+3. [Optimizaciones en MySql](http://www.arsys.info/programacion/bases-de-datos/como-optimizar-bases-de-datos-mysql/)
 
 
 #####Practice:#####
@@ -457,16 +453,18 @@ Commit your practice code.
 → [index](#index)
 
 
-
 ####Topic 6: Sprint Core & REST (3 day)####
 
 #####Reading:#####
+1. [Quick guide](http://www.tutorialspoint.com/spring/spring_quick_guide.htm)
 
-   - [Quick guide](http://www.tutorialspoint.com/spring/spring_quick_guide.htm)
-   - [Spring boot](http://docs.spring.io/spring-boot/docs/1.2.1.BUILD-SNAPSHOT/reference/htmlsingle/) up to point III (included)
-   - [REST I](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
-   - [REST II](http://martinfowler.com/articles/richardsonMaturityModel.html)
-   - [Spring boot - rest services guide](http://spring.io/guides/tutorials/bookmarks/)
+2. [Spring boot](http://docs.spring.io/spring-boot/docs/1.2.1.BUILD-SNAPSHOT/reference/htmlsingle/) up to point III (included)
+
+3. [REST I](https://www.youtube.com/watch?v=YCcAE2SCQ6k)
+
+4. [REST II](http://martinfowler.com/articles/richardsonMaturityModel.html)
+
+5. [Spring boot - rest services guide](http://spring.io/guides/tutorials/bookmarks/)
   
 #####Practice:#####
 
@@ -484,11 +482,11 @@ Commit your practice code.
 → [index](#index)
 
 
-
 ####Topic 7: ORM (1 day)####
 
 #####Reading:#####
 1. [Spring ORM integration](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/orm.html)
+
 2. Spring Boot and [JPA integration](http://spring.io/guides/gs/accessing-data-jpa/)
 
 #####Practice:#####
@@ -511,17 +509,20 @@ Commit your practice code.
 
 → [index](#index)
 
-
-
 ####Topic 8: Spring Data & MongoDB (2 day)####
 
 #####Reading:#####
-  - [SQL to MongoDB Mapping Chart](http://docs.mongodb.org/manual/reference/sql-comparison)
-  - [Installing MongoDB](http://docs.mongodb.org/manual/installation)
-  - [Getting Started With MongoDB](http://docs.mongodb.org/manual/tutorial/getting-started/)
-  - [Java And MongoDB](http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver)
-  - [Spring and Mongo](http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/)
-  - [Spring boot and MongoDB](http://docs.mongodb.org/manual/tutorial/getting-started/)
+1. [SQL to MongoDB Mapping Chart](http://docs.mongodb.org/manual/reference/sql-comparison)
+
+2. [Installing MongoDB](http://docs.mongodb.org/manual/installation)
+
+3. [Getting Started With MongoDB](http://docs.mongodb.org/manual/tutorial/getting-started/)
+
+4. [Java And MongoDB](http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver)
+
+5. [Spring and Mongo](http://www.mkyong.com/mongodb/spring-data-mongodb-hello-world-example/)
+
+6. [Spring boot and MongoDB](http://docs.mongodb.org/manual/tutorial/getting-started/)
 
 #####Practice:#####
 
