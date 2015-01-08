@@ -63,7 +63,7 @@ public class Book {
     //toString() that returns "'book-name' by author-name (gender) at email".
     @Override
     public String toString() {
-        return name + " " + "by" + author + " " + author.toString();
+        return name + " by " + author;
     }
 
 }
