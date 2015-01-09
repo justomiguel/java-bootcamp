@@ -286,7 +286,7 @@ Commit your practice code.
    - Create, compile, test, and install the Maven project created on the previous point. To prove that this program works, run it from the command line.
 3. Customizing a Maven Project
    Expand the project created on point 2. The idea is to start playing with adding some dependencies, adding some source code, and customizing the project to suit specific needs. 
-4. A Simple Web Application  (To be discussed. Not really sure if this will take place).
+4. A Simple Web Application  
 5. A Multi-module Project.
    Create a multi-module project that combines work done on previous points (2 and 5). The idea when completing this point is to be able to use Maven to develop complex, multi-module projects.
 6. Optimizing and Refactoring POMs.
