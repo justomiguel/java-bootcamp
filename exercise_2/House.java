@@ -50,6 +50,11 @@ public class House {
         this.floorQuantity = floorQuantity;
     }
     
+    @Override
+    public String toString(){
+        return "Bathroom Quantity:" + bathroomQuantity + "bedroom Quantity:"+ bedroomQuantity + "Floor Quantity:" + floorQuantity;   
+    }
+    
     
     
 }

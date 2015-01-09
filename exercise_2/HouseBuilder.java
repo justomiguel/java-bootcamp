@@ -10,8 +10,9 @@ package building;
  *
  * @author roberta
  */
-abstract class HouseBuilder {
-    protected House house;
+//abstract class HouseBuilder {
+public interface HouseBuilder {
+    /*protected House house;
     
     public House getHouse(){
         return house;
@@ -19,11 +20,13 @@ abstract class HouseBuilder {
     
     public void newHouse(){
         house = new House();
-    }
+    }*/
     
-    public abstract void buildBathroom();
-    public abstract void buildBedroom();
-    public abstract void buildFloor();
+    public void buildBathroom();
+    public void buildBedroom();
+    public void buildFloor();
+    
+    public House getHouse();
     
     
     

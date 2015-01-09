@@ -12,13 +12,25 @@ package building;
  */
 public class BuilderTest {
     public static void main(String[] args) {
-        Construction construction = new Construction();
-        HouseBuilder duplexHouse = new DuplexHouse();
-        HouseBuilder oneFloorHouse = new OneFloorHouseBuilder();
+ 
+        HouseBuilder houseBuilder = new DuplexHouseBuilder();
+        ConstructionDirector constructionDirector = new  ConstructionDirector(houseBuilder);
+        constructionDirector.buildHouse();
+        House house = constructionDirector.getHouse();
+        System.out.println("House is:" + house);
         
+        houseBuilder = new OneFloorHouseBuilder();
+        constructionDirector = new  ConstructionDirector(houseBuilder);
+        constructionDirector.buildHouse();
+        house = constructionDirector.getHouse();
+        System.out.println("House is:" + house);
+        
+    /*    HouseBuilder duplexHouse = new DuplexHouse();
+        HouseBuilder oneFloorHouse = new OneFloorHouse(); 
         construction.setHouseBuilder(duplexHouse);
         construction.buildingHouse();
+        House house = construction.getHouse();*/
         
-        House house = construction.getHouse();
+        
     }
 }

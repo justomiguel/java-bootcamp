@@ -10,8 +10,15 @@ package building;
  *
  * @author roberta
  */
-public class OneFloorHouseBuilder extends HouseBuilder{
+//public class OneFloorHouse extends HouseBuilder{
 
+public class OneFloorHouseBuilder implements HouseBuilder{
+    private House house;
+    
+    public OneFloorHouseBuilder(){
+        house = new House();
+    }
+    
     @Override
     public void buildBathroom() {
         house.setBathroomQuantity(2);
@@ -26,6 +33,11 @@ public class OneFloorHouseBuilder extends HouseBuilder{
     @Override
     public void buildFloor() {
         house.setFloorQuantity(1);
+    }
+    ///agregado
+    @Override
+    public House getHouse(){
+        return house;
     }
         
 }
