@@ -289,8 +289,6 @@ Commit your practice code.
 4. A Simple Web Application  
 5. A Multi-module Project.
    Create a multi-module project that combines work done on previous points (2 and 5). The idea when completing this point is to be able to use Maven to develop complex, multi-module projects.
-6. Optimizing and Refactoring POMs.
-   Need entirely sure what to include here. Probably start working with specific profiles.
 
 #####Key Points:#####
 
