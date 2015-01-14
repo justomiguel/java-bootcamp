@@ -13,7 +13,7 @@ public class HouseDirector {
 		houseBuilder.buildRooms();
 	}
 
-	public House getMeal() {
+	public House getHouse() {
 		return houseBuilder.getHouse();
 	}
 
