@@ -9,19 +9,15 @@ package paymentCounterPackage;
  *
  * @author Santiago
  */
-public class PaymentCounter {
+public enum PaymentCounter {
     
-    public static synchronized PaymentCounter getInstance(){
-        if (PaymentCounter.INSTANCE == null){
-            PaymentCounter.INSTANCE = new PaymentCounter(1);
-        }
-        return PaymentCounter.INSTANCE;
-
+    INSTANCE;
+    private int idValue;
+    
+    private PaymentCounter (){
+        this.idValue = 1;
     }
 
-    private int idValue;
-    private static PaymentCounter INSTANCE;
-    
     private PaymentCounter(final int idValue){
         this.idValue = idValue;
     }
