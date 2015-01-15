@@ -16,7 +16,7 @@ import itemsPackage.Item;
  */
 public class MailingList {
     private String email;
-    private String contents;
+    private StringBuilder sb = new StringBuilder(100);
 
     public String getEmail() {
         return email;
@@ -27,29 +27,35 @@ public class MailingList {
     }
 
     public String getContents() {
-        return contents;
+        return sb.toString();
     }
 
-    public void setContents(String contents) {
-        this.contents = contents;
+    public void setContents(StringBuilder sb) {
+        this.sb = sb;
     }
     
     public String sendEmail(Offer o){
-        contents += "There has been a new offer added:";
-        contents += o.toString();
+        sb.append("There has been a new offer added:");
+        sb.append(o.toString());
         System.out.println("Email with a new offer details sent");
-        return contents;
+        return sb.toString();
     }
     
     public String sendEmail(Item i){
-        contents += "Item: " +i.getName() +" Changed price to:" + i.getPrice();
+        sb.append("Item: ");
+        sb.append(i.getName());
+        sb.append(" Changed price to: ");
+        sb.append(i.getPrice());
         System.out.println("Email with item price change details sent");
-        return contents;
+        return sb.toString();
     }
     public String sendEmail(ShoppingCart sc){ 
-        contents += "Transaction number: " +PaymentCounter.getInstance() +" completed, total spent was: " + sc.getTotal();
+        sb.append("Transaction number: ");
+        sb.append(PaymentCounter.INSTANCE.getNextValue());
+        sb.append(" completed, total spent was: ");
+        sb.append(sc.getTotal());
         System.out.println("Email with new transaction details sent");
-        return contents;
+        return sb.toString();
     }
     
 }
