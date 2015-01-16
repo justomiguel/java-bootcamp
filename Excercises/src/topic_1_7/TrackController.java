@@ -28,7 +28,7 @@ public class TrackController extends Observable{
 		System.out.println("Song was stopped");
 	}
 	
-	public void pause(Track t){
+	public void pause(){
 		driver.pause();
 		System.out.println("Song was paused");
 	}
