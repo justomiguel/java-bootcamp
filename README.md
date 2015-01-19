@@ -325,7 +325,7 @@ Commit your practice code.
   * If the row-length is 3 and the input string is "a b c d e f", the result should be "a b", "c d", "e f"
   * If the row-length is 5 and the input string is "Excelent", the result should be "Excel", "ent"
 
-3. Use TDD to grow the 'Recent file list' behaviour. Some examples of this behaviour is:
+3. Use TDD to create the 'Recent file list' behaviour. Some examples of this behaviour is:
   * When the program is run for the first time, the list is empty.
   * When a file is opened, it is added to the recent file list.
   * If an opened file already exists in the recent file list, it is bumped to the top, not duplicated in the list.
