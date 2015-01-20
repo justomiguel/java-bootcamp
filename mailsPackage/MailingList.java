@@ -16,7 +16,7 @@ import itemsPackage.Item;
  */
 public class MailingList {
     private String email;
-    private StringBuilder sb = new StringBuilder(100);
+    
 
     public String getEmail() {
         return email;
@@ -25,16 +25,9 @@ public class MailingList {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public String getContents() {
-        return sb.toString();
-    }
-
-    public void setContents(StringBuilder sb) {
-        this.sb = sb;
-    }
     
     public String sendEmail(Offer o){
+        StringBuilder sb = new StringBuilder(100);
         sb.append("There has been a new offer added:");
         sb.append(o.toString());
         System.out.println("Email with a new offer details sent");
@@ -42,6 +35,7 @@ public class MailingList {
     }
     
     public String sendEmail(Item i){
+        StringBuilder sb = new StringBuilder(100);
         sb.append("Item: ");
         sb.append(i.getName());
         sb.append(" Changed price to: ");
@@ -50,6 +44,7 @@ public class MailingList {
         return sb.toString();
     }
     public String sendEmail(ShoppingCart sc){ 
+        StringBuilder sb = new StringBuilder(100);
         sb.append("Transaction number: ");
         sb.append(PaymentCounter.INSTANCE.getNextValue());
         sb.append(" completed, total spent was: ");
