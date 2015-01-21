@@ -47,7 +47,7 @@ exercises**
 
     * [Topic 5: SQL - MySql](#topic-5-sql---mysql-1-day)
 
-    * [Topic 6: Sprint Core & REST](#topic-6-sprint-core--rest-3-day)
+    * [Topic 6: Spring Core & REST](#topic-6-spring-core--rest-3-day)
 
     * [Topic 7: Hibernate](#topic-7-orm-1-day)
   
@@ -449,7 +449,7 @@ Commit your practice code.
 → [index](#index)
 
 
-####Topic 6: Sprint Core & REST (3 day)####
+####Topic 6: Spring Core & REST (3 day)####
 
 #####Reading:#####
 1. [Quick guide](http://www.tutorialspoint.com/spring/spring_quick_guide.htm)
