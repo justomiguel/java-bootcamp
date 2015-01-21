@@ -11,11 +11,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        Scanner s = new Scanner(System.in);
-        int f;
-        System.out.println( "Insert number to calculate factorial: " );
-        f = Integer.parseInt(s.next());
+        System.out.println(callFactorial(6));
+    }
+    
+    public static int callFactorial(int x){
         FactorialApp fact = new FactorialApp();
-        System.out.println(fact.calculateFactorial(f));
+        x = fact.calculateFactorial(x);
+        return x;       
     }
 }
