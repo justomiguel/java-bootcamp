@@ -366,7 +366,7 @@ Commit your practice code.
 #####Practice:#####
 
 1. Create a shopping cart API spec
-2. Implement the previous shopping cart using spring 4 & TDD.
+2. Implement the previous shopping cart using TDD.
 3. Document endpoints
 4. Design a UserService for CRUD operations.
 5. Implement and document previous UserService.
