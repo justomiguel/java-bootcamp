@@ -9,39 +9,46 @@ import com.firstExercise.tdd.NumberConverter;
 public class NumberConverterTest {
 
 	@Test
-	public void CheckIfiNumberOneOk() {
+	public void checkIfiNumberOneOk() {
 		NumberConverter converter = new NumberConverter();
-		assertEquals(converter.transformNumberToDollars(1), "One dollars");
+		assertEquals("One dollars", converter.transformNumberToDollars(1));
 	}
 	
 	@Test
-	public void CheckIfiNumberTenOk() {
+	public void checkIfiNumberTenOk() {
 		NumberConverter converter = new NumberConverter();
-		assertEquals(converter.transformNumberToDollars(10), "Ten dollars");
+		assertEquals("Ten dollars", converter.transformNumberToDollars(10));
 	}
 	
 	@Test
-	public void CheckIfiNumberHoundredOk() {
+	public void checkIfiNumberHoundredOk() {
 		NumberConverter converter = new NumberConverter();
-		assertEquals(converter.transformNumberToDollars(100), "One Hundred dollars");
+		assertEquals( "One Hundred dollars", converter.transformNumberToDollars(100));
 	}
 	
 	@Test
-	public void CheckIfiNumberThousandAndTwoOk() {
+	public void checkIfiNumberThousandAndTwoOk() {
 		NumberConverter converter = new NumberConverter();
-		assertEquals(converter.transformNumberToDollars(1002), "One Thousand Two dollars");
+		assertEquals("One Thousand Two dollars", converter.transformNumberToDollars(1002));
 	}
 	
 	@Test
-	public void CheckIfMoreDecimals() {
+	public void checkIfMoreDecimals() {
 		NumberConverter converter = new NumberConverter();
-		assertEquals(converter.transformNumberToDollars(1002.999), "Has more decimal numbers than permitted");
+		assertEquals("Has more decimal numbers than permitted", converter.transformNumberToDollars(1002.999));
 	}
+	
+	@Test
+	public void checkStrangeParameter() {
+		NumberConverter converter = new NumberConverter();
+		assertEquals("One Hundred Twenty Three dollars", converter.transformNumberToDollars(123.));
+	}
+	
 	
 	@Test
 	public void CheckDecimals() {
 		NumberConverter converter = new NumberConverter();
-		assertEquals(converter.transformNumberToDollars(1002.99), "One Thousand Two 99\\100 dollars");
+		assertEquals("One Thousand Two 99\\100 dollars", converter.transformNumberToDollars(1002.99));
 	}
 
 }

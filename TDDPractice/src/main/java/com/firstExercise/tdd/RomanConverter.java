@@ -14,12 +14,12 @@ public class RomanConverter {
 		try{
         	return toRoman(number);
         }
-        catch(StackOverflowError e){
+        catch(NumberTooBigException e){
             return "Number too big!";
         }
 	}
 	
-	public String toRoman(int number) throws StackOverflowError{
+	public String toRoman(int number) throws NumberTooBigException{
     	int l =  map.floorKey(number);
         if ( number == l ) {
             return map.get(number);

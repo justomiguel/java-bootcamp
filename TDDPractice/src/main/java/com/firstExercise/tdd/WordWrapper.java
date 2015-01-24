@@ -2,18 +2,15 @@ package com.firstExercise.tdd;
 
 public class WordWrapper {
 	
-	public static final String separator = System.getProperty("line.separator");
+	public static final String SEPARATOR = System.getProperty("line.separator");
 	
     public static String wrapWords(final String str, final int wrapLength) {
-        return wrap(str, wrapLength, null, true);
+        return wrap(str, wrapLength, true);
     }
     
-    public static String wrap(final String str, int wrapLength, String newLineStr, final boolean wrapLongWords) {
+    public static String wrap(final String str, int wrapLength, final boolean wrapLongWords) {
         if (str == null) {
             return null;
-        }
-        if (newLineStr == null) {
-            newLineStr = System.getProperty("line.separator");
         }
         if (wrapLength < 1) {
             wrapLength = 1;
@@ -32,22 +29,20 @@ public class WordWrapper {
             if (spaceToWrapAt >= offset) {
                 // normal case
                 wrappedLine.append(str.substring(offset, spaceToWrapAt));
-                wrappedLine.append(newLineStr);
+                wrappedLine.append(SEPARATOR);
                 offset = spaceToWrapAt + 1;
                 
             } else {
                 // really long word or URL
                 if (wrapLongWords) {
                     // wrap really long word one line at a time
-                    wrappedLine.append(str.substring(offset, wrapLength + offset));
-                    wrappedLine.append(newLineStr);
+                    wrappedLine.append(str.substring(offset, wrapLength + offset)).append(SEPARATOR);;
                     offset += wrapLength;
                 } else {
                     // do not wrap really long word, just extend beyond limit
                     spaceToWrapAt = str.indexOf(' ', wrapLength + offset);
                     if (spaceToWrapAt >= 0) {
-                        wrappedLine.append(str.substring(offset, spaceToWrapAt));
-                        wrappedLine.append(newLineStr);
+                        wrappedLine.append(str.substring(offset, spaceToWrapAt)).append(SEPARATOR);
                         offset = spaceToWrapAt + 1;
                     } else {
                         wrappedLine.append(str.substring(offset));
@@ -59,8 +54,6 @@ public class WordWrapper {
 
         // Whatever is left in line is short enough to just pass through
         wrappedLine.append(str.substring(offset));
-
-        System.out.println(wrappedLine.toString());
         
         return wrappedLine.toString();
     }

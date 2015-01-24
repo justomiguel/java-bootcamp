@@ -33,8 +33,8 @@ public class RecentFileManager<E> {
 			recentFiles.remove(recentFiles.size()-1);
 	}
 	
-	public ArrayList<E> getRecentFiles(){
-		return (ArrayList<E>) recentFiles;
+	public List<E> getRecentFiles(){
+		return (List<E>) recentFiles;
 	}
 
 }

@@ -12,7 +12,7 @@ import com.firstExercise.tdd.RomanConverter;
 public class RomanTest {
 
 	@Test
-	public void Fivetest() {
+	public void testfive() {
 		TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 		map.put(1000, "M");
 		map.put(900, "CM");
@@ -28,11 +28,11 @@ public class RomanTest {
 		map.put(4, "IV");
 		map.put(1, "I");
 		RomanConverter roman = new RomanConverter(map);
-		assertEquals(roman.convertToRoman(5), "V");
+		assertEquals("V",roman.convertToRoman(5));
 	}
 	
 	@Test
-	public void Tentest() {
+	public void testTen() {
 		TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 		map.put(1000, "M");
 		map.put(900, "CM");
@@ -48,11 +48,11 @@ public class RomanTest {
 		map.put(4, "IV");
 		map.put(1, "I");
 		RomanConverter roman = new RomanConverter(map);
-		assertEquals(roman.convertToRoman(10), "X");
+		assertEquals("X",roman.convertToRoman(10));
 	}
 	
 	@Test
-	public void HundredOnetest() {
+	public void testundredOne() {
 		TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 		map.put(1000, "M");
 		map.put(900, "CM");
@@ -68,11 +68,11 @@ public class RomanTest {
 		map.put(4, "IV");
 		map.put(1, "I");
 		RomanConverter roman = new RomanConverter(map);
-		assertEquals(roman.convertToRoman(101), "CI");
+		assertEquals("CI", roman.convertToRoman(101));
 	}
 	
 	@Test
-	public void exceedtest() {
+	public void tesexceedt() {
 		TreeMap<Integer, String> map = new TreeMap<Integer, String>();
 		map.put(1000, "M");
 		map.put(900, "CM");
@@ -88,7 +88,7 @@ public class RomanTest {
 		map.put(4, "IV");
 		map.put(1, "I");
 		RomanConverter roman = new RomanConverter(map);
-		assertEquals(roman.convertToRoman(1000000000), "Number too big!");
+		assertEquals("Number too big!", roman.convertToRoman(1000000000));
 	}
 
 }

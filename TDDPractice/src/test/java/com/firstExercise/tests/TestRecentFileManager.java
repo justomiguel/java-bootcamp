@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Test;
 
@@ -12,15 +13,15 @@ import com.firstExercise.tdd.RecentFileManager;
 public class TestRecentFileManager {
 
 	@Test
-	public void Inicialtest() {
+	public void TestInicial() {
 		File f = new File("");
 		RecentFileManager manager = new RecentFileManager(15);
 		manager.add(f);
-		assertEquals(manager.getMostRecentFile(),f);
+		assertEquals(f, manager.getMostRecentFile());
 	}
 	
 	@Test
-	public void Maxtest() {
+	public void TestMaxUsage() {
 		File f1 = new File("h");
 		File f2 = new File("j");
 		File f3 = new File("k");
@@ -32,13 +33,13 @@ public class TestRecentFileManager {
 		manager.add(f3);
 		manager.add(f4);
 		manager.add(f5);
-		ArrayList<Object> test = new ArrayList<Object>();
+		List<Object> test = new ArrayList<Object>();
 		test.add(f5);
 		test.add(f4);
-		assertEquals(manager.getRecentFiles(), test);
+		assertEquals(test, manager.getRecentFiles());
 	}
 	@Test
-	public void getLEastUsedtest() {
+	public void TestgetLEastUsedtest() {
 		File f1 = new File("h");
 		File f2 = new File("j");
 		File f3 = new File("k");
@@ -50,7 +51,7 @@ public class TestRecentFileManager {
 		manager.add(f3);
 		manager.add(f4);
 		manager.add(f5);
-		assertEquals(manager.getLeastRecentFile(), f1);
+		assertEquals(f1, manager.getLeastRecentFile());
 	}
 
 }

@@ -4,7 +4,7 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 public class NumberConverter {
-	private static final String[] tensNames = {
+	private static final String[] TENSNAMES = {
 	    "",
 	    " Ten",
 	    " Twenty",
@@ -17,7 +17,7 @@ public class NumberConverter {
 	    " Ninety"
 	  };
 
-	  private static final String[] numNames = {
+	  private static final String[] NUMNAMES = {
 	    "",
 	    " One",
 	    " Two",
@@ -49,30 +49,26 @@ public class NumberConverter {
 		String soFar;
 
 		if (number % 100 < 20) {
-			soFar = numNames[number % 100];
+			soFar = NUMNAMES[number % 100];
 			number /= 100;
 		} else {
-			soFar = numNames[number % 10];
+			soFar = NUMNAMES[number % 10];
 			number /= 10;
 
-			soFar = tensNames[number % 10] + soFar;
+			soFar = TENSNAMES[number % 10] + soFar;
 			number /= 10;
 		}
 		if (number == 0)
 			return soFar;
-		return numNames[number] + " Hundred" + soFar;
+		return NUMNAMES[number] + " Hundred" + soFar;
 	}
 
 	public String transformNumberToDollars(double number) {
 		//Numbers from zero to 999999999999
-		if (number == 0) {
+		if (number == 0) 
 			return "Zero" + "dollars";
-		}
-		else{
-			if(hasMoreDigits(number)){
+		else if(hasMoreDigits(number))
 				return "Has more decimal numbers than permitted";
-			}
-		}
 
 		String snumber = Double.toString(number);
 
