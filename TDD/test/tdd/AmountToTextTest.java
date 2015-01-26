@@ -42,7 +42,7 @@ public class AmountToTextTest {
      */
     @Test
     public void testConvert() {
-        System.out.println("convert");
+        
         double number = 150.15;
         String expResult = " one hundred fifty and  fifteen cents";
         String result = AmountToText.convert(number);
@@ -53,7 +53,7 @@ public class AmountToTextTest {
     
     @Test
     public void testPass() {
-        System.out.println("Pass");
+        
         AmountToText am = new AmountToText(10);
         assertEquals(" ten and zero cents", am.getText());
     }
