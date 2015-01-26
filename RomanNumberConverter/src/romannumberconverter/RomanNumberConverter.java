@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package romannumberconverter;
 
 /**
@@ -13,38 +8,68 @@ public class RomanNumberConverter {
 
     private static String romanNumber;
 
-    private static int singleChar(char x) {
-        switch (x) {
-            case 'M':
-                return 1000;
-            case 'D':
-                return 500;
-            case 'C':
-                return 100;
-            case 'L':
-                return 50;
-            case 'X':
-                return 10;
-            case 'V':
-                return 5;
-            case 'I':
-                return 1;
-            default:
-                throw new IllegalArgumentException("Roman letters are: I V X L C D or M");
+    public enum singleChar {
+
+        I(1),
+        V(5),
+        X(10),
+        L(50),
+        C(100),
+        D(500),
+        M(1000);
+
+        int value;
+
+        int getValue() {
+            return value;
+        }
+
+        singleChar(int value) {
+            this.value = value;
+        }
+
+        public static singleChar valueOf(char romanChar) {
+            switch (String.valueOf(romanChar).toLowerCase().toCharArray()[0]) {
+                case 'i':
+                    return singleChar.I;
+                case 'v':
+                    return singleChar.V;
+                case 'x':
+                    return singleChar.X;
+                case 'l':
+                    return singleChar.L;
+                case 'c':
+                    return singleChar.C;
+                case 'd':
+                    return singleChar.D;
+                case 'm':
+                    return singleChar.M;
+                default:
+                    return null;
+            }
         }
     }
 
     public static int convertRoman(String r) {
         int decimal = 0;
-        String roman = r.toUpperCase();
-        for (int i = 0; i < roman.length() - 1; i++) {
-            if (singleChar(roman.charAt(i)) < singleChar(roman.charAt(i + 1))) {
-                decimal -= singleChar(roman.charAt(i));
+        final singleChar[] romanChars = singleChar.values();
+        char[] roman = r.toUpperCase().toCharArray();
+
+        for (int i = 0; i < roman.length - 1; i++) {
+            singleChar currentRomanChar = singleChar.valueOf(roman[i]);
+            int currentValue = 0;
+            currentValue = currentRomanChar.getValue();
+            int nextValue = singleChar.valueOf(roman[i + 1]).getValue();
+            if (currentValue < nextValue) {
+
+                decimal -= currentValue;
             } else {
-                decimal += singleChar(roman.charAt(i));
+                decimal += currentValue;
             }
         }
-        decimal += singleChar(roman.charAt(roman.length() - 1));
+        int aux = r.length() - 1;
+        decimal += singleChar.valueOf(r.charAt(aux)).getValue();
+
         return decimal;
     }
 
@@ -108,10 +133,9 @@ public class RomanNumberConverter {
     }
 
     public static void main(String[] args) {
-        System.out.println(convertRoman("M"));
-        System.out.println(convertRoman("ccxxii"));
+        System.out.println(convertRoman("m"));
+        System.out.println(convertRoman("ccxxi"));
         System.out.println(convertRoman("mmclx"));
-        System.out.println(convertRoman("MDCaLXXIV"));
         System.out.println(convertDecimal(1666));
         System.out.println(convertDecimal(4));
         System.out.println(convertDecimal(2500));
