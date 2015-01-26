@@ -132,9 +132,4 @@ public class AmountToText {
         return text;
     }
 
-    public static void main(String[] args) {
-
-        System.out.println(AmountToText.convert(12525.15));
-
-    }
 }
