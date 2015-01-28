@@ -420,7 +420,7 @@ Commit your practice code.
         Students:
           <last-name>, <first-name> (ordered by alphabetically by last name)
 
-5. List final course notes for a given student (the input could be last name or the registration number). They should be ordered by highest notes and course name)
+5. List final course notes for a given student (the input should be the registration number). They should be ordered by highest notes and course name)
 6. Percentage of students that passed/failed a given course.
 7. For a given teacher, list the timeline for each course that he is assigned to (ordered by date), and the course name. The format should be:
 
