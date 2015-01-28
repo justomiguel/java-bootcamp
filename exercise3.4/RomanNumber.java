@@ -35,24 +35,14 @@ public enum RomanNumber {
      * @param l
      * @return
      */
-    public static int parse(char l) {
-        switch (l) {
-            case 'I':
-                return I.value;
-            case 'V':
-                return V.value;
-            case 'X':
-                return X.value;
-            case 'L':
-                return L.value;
-            case 'C':
-                return C.value;
-            case 'D':
-                return D.value;
-            case 'M':
-                return M.value;
-            default:
-                throw new IllegalArgumentException("Not a romand symbol!");
+    public static int parse(String l) {
+        for (RomanNumber r : RomanNumber.values()) {
+            if (r.toString().equals(l)) {
+                return r.value;
+            }
         }
+
+        throw new IllegalArgumentException("Not a romand symbol!");
+
     }
 }

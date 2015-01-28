@@ -50,8 +50,7 @@ public class RomanNumberConversionTest {
         String expResult = "V";
         String result = RomanNumberConversion.decToRoman(dec);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -65,8 +64,7 @@ public class RomanNumberConversionTest {
         String expResult = "21";
         String result = instance.romanToDec(s);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-       // fail("The test case is a prototype.");
+        
     }
     
 }
