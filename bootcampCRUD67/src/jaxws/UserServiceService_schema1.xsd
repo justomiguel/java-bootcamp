@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://bootcamp.com/" xmlns:tns="http://bootcamp.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="SQLException" type="tns:SQLException"/>
+
+  <xs:element name="addFriend" type="tns:addFriend"/>
+
+  <xs:element name="addFriendResponse" type="tns:addFriendResponse"/>
+
+  <xs:element name="createUser" type="tns:createUser"/>
+
+  <xs:element name="createUserResponse" type="tns:createUserResponse"/>
+
+  <xs:element name="deleteUser" type="tns:deleteUser"/>
+
+  <xs:element name="deleteUserResponse" type="tns:deleteUserResponse"/>
+
+  <xs:element name="likePhoto" type="tns:likePhoto"/>
+
+  <xs:element name="likePhotoResponse" type="tns:likePhotoResponse"/>
+
+  <xs:element name="readUser" type="tns:readUser"/>
+
+  <xs:element name="readUserResponse" type="tns:readUserResponse"/>
+
+  <xs:element name="updateUser" type="tns:updateUser"/>
+
+  <xs:element name="updateUserResponse" type="tns:updateUserResponse"/>
+
+  <xs:element name="uploadPhoto" type="tns:uploadPhoto"/>
+
+  <xs:element name="uploadPhotoResponse" type="tns:uploadPhotoResponse"/>
+
+  <xs:complexType name="addFriend">
+    <xs:sequence>
+      <xs:element name="Account" type="xs:string" minOccurs="0"/>
+      <xs:element name="FriendAccount" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addFriendResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SQLException">
+    <xs:sequence>
+      <xs:element name="SQLState" type="xs:string" minOccurs="0"/>
+      <xs:element name="errorCode" type="xs:int"/>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+      <xs:element name="nextException" type="tns:sqlException" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sqlException">
+    <xs:complexContent>
+      <xs:extension base="tns:exception">
+        <xs:sequence>
+          <xs:element name="nextException" type="tns:sqlException" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="exception">
+    <xs:complexContent>
+      <xs:extension base="tns:throwable">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="throwable">
+    <xs:sequence>
+      <xs:element name="stackTrace" type="tns:stackTraceElement" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="stackTraceElement" final="extension restriction">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="uploadPhoto">
+    <xs:sequence>
+      <xs:element name="Account" type="xs:string" minOccurs="0"/>
+      <xs:element name="photoURL" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="uploadPhotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:photo" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="photo">
+    <xs:sequence>
+      <xs:element name="likeCount" type="xs:int"/>
+      <xs:element name="URL" type="xs:string" minOccurs="0"/>
+      <xs:element name="userAccount" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="readUser">
+    <xs:sequence>
+      <xs:element name="Account" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="readUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:user" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="user">
+    <xs:sequence>
+      <xs:element name="account" type="xs:string" minOccurs="0"/>
+      <xs:element name="pass" type="xs:string" minOccurs="0"/>
+      <xs:element name="fName" type="xs:string" minOccurs="0"/>
+      <xs:element name="lName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createUser">
+    <xs:sequence>
+      <xs:element name="Account" type="xs:string" minOccurs="0"/>
+      <xs:element name="Password" type="xs:string" minOccurs="0"/>
+      <xs:element name="Name" type="xs:string" minOccurs="0"/>
+      <xs:element name="Surname" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:user" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateUser">
+    <xs:sequence>
+      <xs:element name="Account" type="xs:string" minOccurs="0"/>
+      <xs:element name="Password" type="xs:string" minOccurs="0"/>
+      <xs:element name="Name" type="xs:string" minOccurs="0"/>
+      <xs:element name="Surname" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:user" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteUser">
+    <xs:sequence>
+      <xs:element name="Account" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="likePhoto">
+    <xs:sequence>
+      <xs:element name="photoURL" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="likePhotoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:photo" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
