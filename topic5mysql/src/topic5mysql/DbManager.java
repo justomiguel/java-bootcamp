@@ -61,7 +61,7 @@ public class DbManager {
     * @param courseName name of the course
     * @throws SQLException 
     */ 
-    public void getStudentsAndTeachersByCourse(String courseName) throws SQLException {
+    public void getStudentsAndTeachersByCourse(String courseName) throws , badInputException {
         try {            
             Statement stt = conn.createStatement();
             stt.execute("USE `high-school`");
@@ -73,6 +73,8 @@ public class DbManager {
             if (res.next()){
             System.out.println("Teacher: " + res.getString("lastName") +", " + res.getString("firstName"));
             System.out.println("Students: ");
+            } else {
+                throw new badInputException();
             }
             ps = conn.prepareStatement("SELECT s.lastName, s.firstName FROM notes n, student s, course c WHERE n.idCourse = c.idCourse AND c.courseName = ? AND n.idStudent = s.idStudent ORDER BY s.lastName ASC");
             ps.setString(1, courseName);
@@ -81,8 +83,8 @@ public class DbManager {
                  System.out.println("   " + res.getString("lastName") + ", " + res.getString("firstName"));
              }
              
-            }catch(Exception e){
-            e.printStackTrace();
+            }catch (badInputException e) {
+            throw new badInputException("Course name not found");
  }
     }
     
@@ -91,7 +93,7 @@ public class DbManager {
      * @param lastName Last name of the student
      * @throws SQLException 
      */
-    public void listFinalNotesForStudent(String lastName) throws SQLException{
+    public void listFinalNotesForStudent(String lastName) throws SQLException, badInputException{
             try{
             Statement stt = conn.createStatement();
             stt.execute("USE `high-school`");
@@ -103,7 +105,9 @@ public class DbManager {
             ps.setString(1, lastName);
             
             ResultSet res = ps.executeQuery();
-            
+            if (!res.next()){
+                throw new badInputException();
+            } else {
             while (res.next()){
          
                 System.out.println("Student id: " +res.getString("idStudent"));
@@ -111,8 +115,9 @@ public class DbManager {
                 System.out.println("Final note: " + res.getDouble("finalNote"));
                 System.out.println("*************");
             }
-    } catch (SQLException e){
-        e.printStackTrace();
+    } }
+        catch (badInputException e) {
+            throw new badInputException("Last name not found");
     }
     }
  
@@ -121,7 +126,7 @@ public class DbManager {
      * @param regNumber Student registration number
      * @throws SQLException 
      */
-    public void listFinalNotesForStudent(int regNumber) throws SQLException{
+    public void listFinalNotesForStudent(int regNumber) throws SQLException, badInputException{
             try{
             Statement stt = conn.createStatement();
             stt.execute("USE `high-school`");
@@ -133,13 +138,15 @@ public class DbManager {
             ps.setInt(1, regNumber);
             
             ResultSet res = ps.executeQuery();
-            
+            if (!res.next()){
+                throw new badInputException();
+            } else {
             while (res.next()){
                 System.out.println("Course: " + res.getString("courseName"));
                 System.out.println("Final note: " + res.getDouble("finalNote"));
             }
-    } catch (SQLException e){
-        e.printStackTrace();
+    } } catch (badInputException e) {
+            throw new badInputException("Registration number not found");
     }
     }
     
@@ -148,7 +155,7 @@ public class DbManager {
      * @param courseName Name of the course
      * @throws SQLException 
      */
-    public void getPercentages(String courseName)throws SQLException{
+    public void getPercentages(String courseName)throws SQLException, badInputException{
         try{
             int pass = 0;
             int fail = 0;
@@ -161,6 +168,9 @@ public class DbManager {
             ps = conn.prepareStatement("SELECT n.finalNote FROM notes n, course c WHERE n.idCourse = c.idCourse AND c.courseName = ? ");
             ps.setString(1, courseName);
             ResultSet rs = ps.executeQuery();
+            if (!rs.next()){
+                throw new badInputException();
+            } else {
             while (rs.next()){
                 if (rs.getDouble("finalNote") < 6.0){
                     fail += 1;
@@ -174,8 +184,8 @@ public class DbManager {
             DecimalFormat df = new DecimalFormat("###.##");
             System.out.println("Percentage of students failing the course: " + df.format(passingPercentage) + "%");
             System.out.println("Percentage of students passing the course: " + df.format(failingPercentage) + "%");
-    } catch (SQLException e){
-        e.printStackTrace();
+    } } catch (badInputException e) {
+           throw new badInputException("Course name not found");
     }
 }
     
@@ -184,7 +194,7 @@ public class DbManager {
      * @param teacherId Id of the teacher
      * @throws SQLException 
      */
-    public void printTeacherSchedule(int teacherId) throws SQLException{
+    public void printTeacherSchedule(int teacherId) throws SQLException, badInputException{
          try{
             Statement stt = conn.createStatement();
             stt.execute("USE `high-school`");
@@ -206,8 +216,24 @@ public class DbManager {
              while (rs.next()){
                  System.out.println("  " +rs.getString("schedule") + ", " + rs.getString("courseName"));
              }
-    } }catch (SQLException e){
-        e.printStackTrace();      
+    } 
+                  else {
+                throw new badInputException();
+            }
+        } catch (badInputException e) {
+            throw new badInputException("Teacher id not found");
+      
     }
 }
+
+        class badInputException extends Exception {
+
+        public badInputException() {
+        }
+
+        public badInputException(String message) {
+            super(message);
+        }
+    }
+
 }
