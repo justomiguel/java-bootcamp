@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_javabootcamp_model_Attendee" items="${attendees}" z="MyP6EazDMhk6t9mQusGMPSOM9nE=">
+        <table:table data="${attendees}" id="l_com_javabootcamp_model_Attendee" path="/attendees" z="FrHkpZ0GxiSQLMFdIEE997CTQEU=">
+            <table:column id="c_com_javabootcamp_model_Attendee_firstName" property="firstName" z="ZTOcS39IT3JAgphUbSpIkJ6/cBo="/>
+            <table:column id="c_com_javabootcamp_model_Attendee_lastName" property="lastName" z="6Jq12Y/S/UpX1VmZbdhWW77m08g="/>
+            <table:column id="c_com_javabootcamp_model_Attendee_email" property="email" z="zhD4dzNS5lUAhjAt8I2ZBbXRa6M="/>
+        </table:table>
+    </page:list>
+</div>

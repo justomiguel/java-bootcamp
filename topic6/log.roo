@@ -1,0 +1,31 @@
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-02-05 19:16:03
+hint
+project --topLevelPackage com.javabootcamp
+jpa setup --provider HIBERNATE --database MYSQL 
+entity jpa --class ~.model.Room --testAutomatically 
+field string --fieldName roomName --notNull --sizeMax 30
+field number --fieldName capacity --notNull --type java.lang.Integer
+entity jpa --class ~.model.Attendee --testAutomatically 
+field string firstName --notNull --sizeMax 30
+field string lastName --notNull --sizeMax 30
+field string email --notNull --sizeMax 30
+entity jpa --class ~.model.Meeting --testAutomatically 
+// [failed] field date --fieldName start --notNull --type java.util.Date 
+field date --fieldName startDate --notNull --type java.util.Date 
+field date --fieldName endDate --notNull --type java.util.Date 
+field reference --fieldName room --type ~.model.Room
+field set --fieldName attendees --type ~.model.Attendee
+web mvc setup
+web mvc all --package ~.web
+security setup
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-02-05 20:07:01
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-02-05 20:30:20
+database properties list
+database properties set --key databaseName --value topic6
+database properties set --key database.databaseName --value topic6
+database properties remove --key databaseName
+json all
+controller all --package ~.controller
+web mvc all --package ~.controller
+web mvc install view --path ext --title "JS WS" --viewName index
