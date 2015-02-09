@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+          http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+">
+  
+
+  <bean id="shoppingCart" class="com.javabootcamp.mavenspringproject.ShoppingCart"></bean>
+
+  <bean id="item" class="com.javabootcamp.mavenspringproject.Item">
+	<property name="name" value="Cheese" />
+	<property name="price" value="2.8" />
+	</bean>
+	
+
+	<bean id="item2" class="com.javabootcamp.mavenspringproject.Item">
+	<property name="name" value="Ham" />
+	<property name="price" value="5.32" />
+	</bean>
+	
+
+	<bean id="item3" class="com.javabootcamp.mavenspringproject.Item">
+	<property name="name" value="Bread" />
+	<property name="price" value="0.62" />
+	</bean>
+	
+
+</beans>
