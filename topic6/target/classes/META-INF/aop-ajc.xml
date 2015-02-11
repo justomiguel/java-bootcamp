@@ -1,0 +1,27 @@
+<aspectj>
+<aspects>
+<aspect name="com.javabootcamp.web.RoomController_Roo_Controller"/>
+<aspect name="com.javabootcamp.model.Meeting_Roo_Jpa_Entity"/>
+<aspect name="com.javabootcamp.model.Room_Roo_Json"/>
+<aspect name="com.javabootcamp.model.Room_Roo_JavaBean"/>
+<aspect name="com.javabootcamp.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.javabootcamp.web.MeetingController_Roo_Controller"/>
+<aspect name="com.javabootcamp.model.Room_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.javabootcamp.model.Room_Roo_Jpa_Entity"/>
+<aspect name="com.javabootcamp.model.Attendee_Roo_Jpa_Entity"/>
+<aspect name="com.javabootcamp.model.Room_Roo_ToString"/>
+<aspect name="com.javabootcamp.model.Meeting_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.javabootcamp.model.Meeting_Roo_Json"/>
+<aspect name="com.javabootcamp.model.Attendee_Roo_ToString"/>
+<aspect name="com.javabootcamp.model.Meeting_Roo_Configurable"/>
+<aspect name="com.javabootcamp.model.Meeting_Roo_ToString"/>
+<aspect name="com.javabootcamp.model.Room_Roo_Configurable"/>
+<aspect name="com.javabootcamp.model.Attendee_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.javabootcamp.model.Meeting_Roo_JavaBean"/>
+<aspect name="com.javabootcamp.model.Attendee_Roo_Configurable"/>
+<aspect name="com.javabootcamp.model.Attendee_Roo_Json"/>
+<aspect name="com.javabootcamp.model.Attendee_Roo_JavaBean"/>
+<aspect name="com.javabootcamp.web.AttendeeController_Roo_Controller"/>
+</aspects>
+</aspectj>
+

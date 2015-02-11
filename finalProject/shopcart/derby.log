@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Feb 07 20:22:39 ART 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-014b-665a-2808-0000135e2de0 
+on database directory memory:/home/rodrigo/NetBeansProjects/shopcart/testdb with class loader java.net.URLClassLoader@57ac9313 
+Loaded from file:/home/rodrigo/.m2/repository/org/apache/derby/derby/10.11.1.1/derby-10.11.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_31-b13
+user.dir=/home/rodrigo/NetBeansProjects/shopcart
+os.name=Linux
+os.arch=amd64
+os.version=3.18.3-201.fc21.x86_64
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
