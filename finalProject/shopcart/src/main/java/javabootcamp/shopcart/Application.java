@@ -4,6 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  *
+ * Class with main method, starts the application
+ * 
  * @author roberta
  */
 

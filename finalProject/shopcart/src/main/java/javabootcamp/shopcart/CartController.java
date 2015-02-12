@@ -53,24 +53,24 @@ public class CartController {
     }
 
     @RequestMapping("/addProduct")
-    public String addProduct(@RequestParam(value = "idProd", required = true) Long productId,
+    public boolean addProduct(@RequestParam(value = "idProd", required = true) Long productId,
             @RequestParam(value = "quantity", required = false, defaultValue = "1") Integer quantity) {
 
         createCart();
         Product product = productRepository.findOne(productId);
         if (product == null) {
-            return "The product does not exists!";
+            return false;
         }
         ShopCartItem item = new ShopCartItem(quantity, product, product.getPrice().multiply(new BigDecimal(quantity)), cart);
         if (cart.getCartItems() == null) {
             cart.setCartItems(new java.util.ArrayList<ShopCartItem>());
         }
         cart.getCartItems().add(item);
-        return "Product: " + product.getName() + " added succesfully!";
+        return true;
     }
 
     @RequestMapping("/removeProduct")
-    public String removeProduct(@RequestParam(value = "idProd", required = true) Long productId) {
+    public boolean removeProduct(@RequestParam(value = "idProd", required = true) Long productId) {
 
         int index = -1;
 
@@ -82,8 +82,9 @@ public class CartController {
         }
         if (index > -1) {
             cart.getCartItems().remove(index);
+            return true;
         }
-        return "Item deleted succesfully!";
+        return false;
 
     }
 
