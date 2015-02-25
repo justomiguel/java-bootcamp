@@ -102,7 +102,7 @@ Developers that move faster than average can go ahead and complete as much exerc
 
 3. Skype Account + headset (audio calls)
 
-4. Create your own [GitHub](https://github.com/) account. Follow this [guideline](https://help.github.com/articles/set-up-git) to setup your account. Also you can read further about Git in [Try Git](https://try.github.io/levels/1/challenges/1)
+4. Create your own [GitHub](https://github.com/) account. Follow this [guideline](https://help.github.com/articles/set-up-git) to setup your account. Also you can read further about Git in [Try Git](https://try.github.io/levels/1/challenges/1) or [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
 
 5. Fork this repo https://github.com/juanpablopizarro/java-bootcamp to use as a base to host the project code.
 
