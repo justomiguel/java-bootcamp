@@ -171,7 +171,7 @@ You will commit all your code on a daily basis, when you finish your practice.
 
 1. Beginners: Java Concepts [basic tutorial](http://docs.oracle.com/javase/tutorial/java/concepts/) (in case you need it!)
 
-2. Beginners: Have fun with [Introduction to Java Programming](http://www.ntu.edu.sg/home/ehchua/programming/java/J1a_Introduction.html). 
+2. Beginners: Have fun with [Introduction to Java Programming](https://www3.ntu.edu.sg/home/ehchua/programming/java/J1a_Introduction.html). 
 
 3. Explore [Design Patterns](http://www.avajava.com/tutorials/categories/design-patterns)
 
